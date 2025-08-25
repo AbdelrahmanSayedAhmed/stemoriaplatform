@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --stemoria-blue: #2563EB;
+  --science-turquoise: #06B6D4;
+  --discovery-yellow: #FACC15;
+  --growth-green: #10B981;
+  --warm-orange: #F97316;
+  --logic-purple: #8B5CF6;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
