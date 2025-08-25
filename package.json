@@ -1,13 +1,11 @@
 {
-  "name": "stemoria-platform",
-  "private": true,
-  "packageManager": "pnpm@8.0.0",
-  "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "start": "turbo run start"
-  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "devDependencies": {
-    "turbo": "^1.11.0"
+    "turbo": "latest",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
   }
 }
