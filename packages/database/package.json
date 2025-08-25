@@ -1,16 +1,11 @@
 {
   "name": "@stemoria/database",
   "version": "1.0.0",
-  "main": "./index.ts",
+  "main": "index.ts",
   "dependencies": {
     "@prisma/client": "^5.8.0"
   },
   "devDependencies": {
     "prisma": "^5.8.0"
-  },
-  "scripts": {
-    "db:generate": "prisma generate",
-    "db:push": "prisma db push",
-    "db:seed": "prisma db seed"
   }
 }
