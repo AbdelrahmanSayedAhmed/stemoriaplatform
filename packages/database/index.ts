@@ -1,13 +1,10 @@
-import { PrismaClient } from '@prisma/client'
+export { PrismaClient } from '@prisma/client'
+export * from './lib/db'
 
-const globalForPrisma = global as unknown as { prisma: PrismaClient }
-
-export const prisma =
-  globalForPrisma.prisma ||
-  new PrismaClient({
-    log: ['query'],
-  })
-
-if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
-
-export * from '@prisma/client'
+// Re-export commonly used types
+export type {
+  User,
+  Course,
+  Lesson,
+  // Add other Prisma types as needed
+} from '@prisma/client'

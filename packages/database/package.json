@@ -1,11 +1,10 @@
 {
   "name": "@stemoria/database",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.ts",
+  "types": "index.ts",
   "dependencies": {
-    "@prisma/client": "^5.8.0"
-  },
-  "devDependencies": {
-    "prisma": "^5.8.0"
+    "@prisma/client": "^5.22.0",
+    "prisma": "^5.22.0"
   }
 }
