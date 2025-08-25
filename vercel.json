@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm turbo build",
-  "installCommand": "pnpm install",
-  "framework": null
+  "buildCommand": "pnpm turbo build --filter=admin",
+  "outputDirectory": "apps/admin/.next",
+  "installCommand": "pnpm install"
 }
