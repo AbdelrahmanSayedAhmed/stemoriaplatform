@@ -17,4 +17,16 @@ export { cn } from "./lib/utils"
 export type { ButtonProps } from "./components/ui/button"
 export type { InputProps } from "./components/ui/input"
 export type { CardProps } from "./components/ui/card"
+
 export type { BadgeProps } from "./components/ui/badge"
+// Re-export everything
+export * from "./src/components/button"
+export * from "./src/components/card"
+export * from "./src/components/ui/scroll-area"
+
+// Custom Stemoria components
+export * from "./src/components/stemoria/feature-card"
+export * from "./src/components/stemoria/navigation"
+
+// Utils
+export * from "./src/lib/utils"
