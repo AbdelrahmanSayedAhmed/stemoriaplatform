@@ -4,7 +4,7 @@ import { prisma } from '@stemoria/database';
 import { withAuth } from '@stemoria/auth';
 
 export const GET = withAuth(async (request: Request) => {
-  // Get actual data from available models
+  // Get actual data from available models (User, Course)
   const [
     totalUsers,
     totalCourses,
@@ -21,8 +21,12 @@ export const GET = withAuth(async (request: Request) => {
     }),
   ]);
 
-  // Mock data for models that don't exist yet
-  // These should be replaced with actual database queries once the proper models are added
+  // TODO: Replace with actual database queries once these models are added to schema:
+  // - Institution model for totalInstitutions
+  // - Lesson model for totalLessons 
+  // - Invoice model for monthlyRevenue calculation
+  // - Subscription model for activeSubscriptions
+  // - TutorSession model for activeSessions
   const mockStats = {
     totalInstitutions: 12, // Mock: institutions count
     totalLessons: totalCourses * 5, // Mock: estimate lessons from courses
