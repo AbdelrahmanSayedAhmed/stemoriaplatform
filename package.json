@@ -7,7 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo build --filter=admin",
+    "build": "turbo build",
+    "build:admin": "turbo build --filter=admin",
+    "build:web": "turbo build --filter=web",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
