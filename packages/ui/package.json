@@ -11,6 +11,7 @@
     "./styles": "./styles/globals.css"
   },
   "scripts": {
+    "build": "tsc --noEmit",
     "lint": "eslint .",
     "type-check": "tsc --noEmit"
   },
