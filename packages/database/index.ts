@@ -1,5 +1,5 @@
 export { PrismaClient } from '@prisma/client'
-export * from './lib/db'
+export { default as prisma } from './src/client'
 
 // Re-export commonly used types
 export type {
