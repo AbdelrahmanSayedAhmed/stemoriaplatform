@@ -1,5 +1,5 @@
 import { NextAuthOptions } from 'next-auth';
-import './types';
+import '../types';
 
 export const authConfig: Partial<NextAuthOptions> = {
   session: {
