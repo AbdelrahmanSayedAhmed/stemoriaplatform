@@ -25,7 +25,7 @@ export * from "./src/components/card"
 export * from "./src/components/ui/scroll-area"
 
 // Custom Stemoria components
-export * from "./src/components/stemoria/feature-card"
+export * from "./src/components/stemoria/feature"
 export * from "./src/components/stemoria/navigation"
 
 // Utils
