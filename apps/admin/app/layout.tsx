@@ -1,12 +1,9 @@
 // apps/admin/app/layout.tsx
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import { AdminProviders } from './providers';
 import { AdminSidebar } from '@/components/admin/sidebar';
 import { AdminHeader } from '@/components/admin/header';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'STEMORIA Admin - Staff Management Portal',
@@ -24,7 +21,7 @@ export default function AdminLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="font-sans">
         <AdminProviders>
           <div className="flex h-screen bg-gray-100">
             <AdminSidebar />
