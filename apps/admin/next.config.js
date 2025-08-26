@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: ['localhost', 'stemoria.com'],
+  experimental: {
+    serverComponentsExternalPackages: ['@stemoria/database']
   },
+  transpilePackages: ['@stemoria/ui', '@stemoria/auth', '@stemoria/database'],
+  output: 'standalone',
 }
 
 module.exports = nextConfig
